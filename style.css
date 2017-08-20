@@ -53,6 +53,11 @@ section {
   padding: 30px;
 }
 
+.fluid {
+  max-width: 65em;
+  margin: 0 auto;
+}
+
 section > h1 {
   display: inline-block;
   background: #346DFF;
