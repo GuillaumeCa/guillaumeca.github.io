@@ -1,0 +1,117 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header {
+  background-image: linear-gradient(170deg, #84EDFF 0%, #C3F6FF 100%);
+  padding: 30px;
+  color: white;
+}
+
+.box {
+  background: #346DFF;
+  padding: 20px;
+}
+
+header > .box {
+  padding: 15px 25px;
+}
+
+.box > span {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.box > h1 {
+  font-weight: normal;
+  font-weight: 300;
+  color: #84EDFF;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.box > h1.title {
+  font-size: 3em;
+  margin: 0;
+}
+
+section {
+  padding: 30px;
+}
+
+section > h1 {
+  display: inline-block;
+  background: #346DFF;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fbox {
+  flex: 1;
+  width: 50%;
+}
+
+.side-img {
+  margin-right: 60px;
+}
+
+.side-img > img {
+  width: 100%;
+  border: 10px solid #346DFF;
+  box-shadow: 15px 15px #84edff;
+}
+
+.box > p {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.box > h3 {
+  display: inline-block;
+  font-size: 1em;
+  color: #346DFF;
+  padding: 5px 10px;
+  background: white;
+  font-weight: bold;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+}
+
+.spacer {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 30em) {
+  .fbox {
+    flex: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .side-img {
+    margin-right: 0;
+  }
+}
