@@ -136,6 +136,39 @@
       </section>
       
     </div>
+    <footer>
+      Copyright © <span id="cprDate"></span> Guillaume Carré  
+    </footer>
     
+    
+    <script type="text/javascript">
+      window.onload = function () {
+
+        var animateTechnoBoxes = function () {
+          var technoBoxes = document.querySelectorAll('.techno');
+          technoBoxes.forEach(function (el, index) {
+            setTimeout(function () {
+              el.classList.add('techno-enter');
+            }, index * 50);
+          })
+        }
+        
+        var technoDisplayed = false;
+        
+        var scroll = function () {
+          var scrollPos = window.scrollY;
+          if (scrollPos > 1050 && !technoDisplayed) {
+            technoDisplayed = true;
+            animateTechnoBoxes();
+          }
+        }
+        
+        document.addEventListener('scroll', scroll);
+        
+        var copyrightDate = document.querySelector('#cprDate');
+        copyrightDate.innerText = new Date().getFullYear();
+        
+      }
+    </script>
   </body>
 </html>
