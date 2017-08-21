@@ -150,7 +150,13 @@ section > h1 {
   }
   
   .techno {
-    width: calc(50% - 40px);
+    width: calc(50% - 30px);
+    margin: 15px;
+    padding: 10px;
+  }
+  
+  .techno > p {
+    font-size: .8em;
   }
   
   .side-img {
