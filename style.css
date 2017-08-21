@@ -87,6 +87,7 @@ section > h1 {
   width: 100%;
   border: 10px solid #346DFF;
   box-shadow: 15px 15px #84edff;
+  vertical-align: middle;
 }
 
 .box > p {
@@ -110,12 +111,48 @@ section > h1 {
   margin-bottom: 80px;
 }
 
-@media (max-width: 30em) {
+.techno {
+  width: calc(20% - 40px);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.techno {
+  border: 5px solid #84edff;
+  box-shadow: 10px 10px 0 #346DFF;  
+}
+
+.techno > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.techno > p {
+  letter-spacing: normal;
+  color: #346DFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 60em) {
+  .techno {
+    width: calc(33% - 40px);
+  }
+}
+
+@media (max-width: 40em) {
   .fbox {
     flex: auto;
     width: 100%;
     margin-bottom: 40px;
   }
+  
+  .techno {
+    width: calc(50% - 40px);
+  }
+  
   .side-img {
     margin-right: 0;
   }
