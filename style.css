@@ -127,6 +127,12 @@ section > h1 {
 
 .techno-enter {
   box-shadow: 10px 10px 0 #346DFF;
+  transition: box-shadow .3s ease-out, transform .3s ease-out
+}
+
+.techno:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 20px 20px 0 #346DFF;
 }
 
 .techno > img {
