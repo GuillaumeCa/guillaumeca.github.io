@@ -15,13 +15,13 @@ body {
 }
 
 header {
-  background-image: linear-gradient(170deg, #84EDFF 0%, #C3F6FF 100%);
+  background: #65afff;
   padding: 30px;
   color: white;
 }
 
 .box {
-  background: #346DFF;
+  background: #346dff;
   padding: 20px;
 }
 
@@ -39,7 +39,7 @@ header > .box {
 .box > h1 {
   font-weight: normal;
   font-weight: 300;
-  color: #84EDFF;
+  color: white;
   font-size: 2.5em;
   margin-bottom: 10px;
 }
@@ -60,7 +60,7 @@ section {
 
 section > h1 {
   display: inline-block;
-  background: #346DFF;
+  background: #346dff;
   color: white;
   font-weight: bold;
   font-size: 1.5em;
@@ -85,8 +85,8 @@ section > h1 {
 
 .side-img > img {
   width: 100%;
-  border: 10px solid #346DFF;
-  box-shadow: 15px 15px #84edff;
+  border: 10px solid #346dff;
+  box-shadow: 15px 15px #65afff;
   vertical-align: middle;
 }
 
@@ -99,7 +99,7 @@ section > h1 {
 .box > h3 {
   display: inline-block;
   font-size: 1em;
-  color: #346DFF;
+  color: #346dff;
   padding: 5px 10px;
   background: white;
   font-weight: bold;
@@ -119,7 +119,7 @@ section > h1 {
   margin-bottom: 10px;
   background: white;
   border: 5px solid white;
-  box-shadow: 5px 5px #84edff;
+  box-shadow: 5px 5px #65afff;
 }
 
 .background-cnt {
@@ -139,21 +139,21 @@ section > h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 5px solid #65afff;
 }
 
 .techno {
-  border: 5px solid #84edff;
-  transition: box-shadow .5s ease-out;
+  transition: box-shadow 0.5s ease-out;
 }
 
 .techno-enter {
-  box-shadow: 10px 10px 0 #346DFF;
-  transition: box-shadow .3s ease-out, transform .3s ease-out
+  box-shadow: 10px 10px 0 #346dff;
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .techno:hover {
   transform: translate(-5px, -5px);
-  box-shadow: 20px 20px 0 #346DFF;
+  box-shadow: 20px 20px 0 #346dff;
 }
 
 .techno > img {
@@ -163,19 +163,18 @@ section > h1 {
 
 .techno > p {
   letter-spacing: normal;
-  color: #346DFF;
+  color: #346dff;
   font-weight: bold;
   text-align: center;
 }
 
 footer {
-  background: #346DFF;
-  box-shadow: 0 -20px 0 #84edff;
+  background: #346dff;
+  box-shadow: 0 -20px 0 #65afff;
   color: white;
   padding: 20px;
   letter-spacing: normal;
 }
-
 
 @media (max-width: 60em) {
   .techno {
@@ -189,17 +188,17 @@ footer {
     width: 100%;
     margin-bottom: 40px;
   }
-  
+
   .techno {
     width: calc(50% - 30px);
     margin: 15px;
     padding: 10px;
   }
-  
+
   .techno > p {
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  
+
   .side-img {
     margin-right: 0;
   }
