@@ -180,7 +180,7 @@
     </section>
 
     <section>
-      <h1>SKILLS</h1>
+      <h1 id="skill-anchor">SKILLS</h1>
       <div class="flex spacer">
         <div class="techno">
           <img src="svg/react.svg" alt="react">
@@ -279,15 +279,22 @@
 
       var technoDisplayed = false;
 
+      var isAnchorReached = function (scroll, anchorSel, offset) {
+        var anchorEl = document.querySelector(anchorSel);
+        return scroll > anchorEl.offsetTop - window.innerHeight + offset;
+      }
+
+
       var scroll = function () {
         var scrollPos = window.scrollY;
-        if (scrollPos > 1050 && !technoDisplayed) {
+        if (isAnchorReached(scrollPos, '#skill-anchor', 400) && !technoDisplayed) {
           technoDisplayed = true;
           animateTechnoBoxes();
         }
       }
 
       document.addEventListener('scroll', scroll);
+      scroll();
 
       var copyrightDate = document.querySelector('#cprDate');
       copyrightDate.innerText = new Date().getFullYear();
