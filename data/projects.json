@@ -1,0 +1,16 @@
+[
+  {
+    "type": "FREELANCE",
+    "anchorTag": "iseplive-capture",
+    "image": "./images/iseplive.png",
+    "title": "ISEPLive",
+    "subtitle": "Club website released in late 2017",
+    "description": "ISEPLive is an ISEP's club. I was asked to built this website in collaboration with JuniorISEP. Following ISEPLive's specifications, I built the frontend using <span class=\"accent\">ReactJS</span> and the backend with <span class=\"accent\">Spring Boot</span> as well as a <span class=\"accent\">MySQL</span> database.",
+    "technologies": ["react", "spring", "mysql"],
+    "url": "https://iseplive.fr",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/juniorisep/IsepLive"
+    }
+  }
+]

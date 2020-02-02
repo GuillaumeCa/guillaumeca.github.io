@@ -1,0 +1,59 @@
+{
+  "skills": [
+    {
+      "tag": "react",
+      "name": "ReactJS",
+      "icon": "./svg/react.svg"
+    },
+    {
+      "tag": "angular2",
+      "name": "Angular",
+      "icon": "./svg/angular-icon.svg"
+    },
+    {
+      "tag": "javascript",
+      "name": "Javascript",
+      "icon": "./svg/javascript.svg"
+    },
+    {
+      "tag": "nodejs",
+      "name": "NodeJS",
+      "icon": "./svg/nodejs-icon.svg"
+    },
+    {
+      "tag": "css",
+      "name": "CSS",
+      "icon": "./svg/css-3.svg"
+    },
+    {
+      "tag": "sass",
+      "name": "Sass",
+      "icon": "./svg/sass.svg"
+    },
+    {
+      "tag": "docker",
+      "name": "Docker",
+      "icon": "./svg/docker.svg"
+    },
+    {
+      "tag": "git",
+      "name": "Git",
+      "icon": "./svg/git-icon.svg"
+    },
+    {
+      "tag": "css",
+      "name": "CSS",
+      "icon": "./svg/css-3.svg"
+    },
+    {
+      "tag": "css",
+      "name": "CSS",
+      "icon": "./svg/css-3.svg"
+    },
+    {
+      "tag": "css",
+      "name": "CSS",
+      "icon": "./svg/css-3.svg"
+    }
+  ]
+}

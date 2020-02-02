@@ -1,42 +1,23 @@
+import { formatDistance } from "date-fns"
+import { fr } from "date-fns/locale"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+export const Header = ({ siteTitle, author, description, lastUpdate }) => (
+  <header>
+    <div className="box">
+      <span>{siteTitle}</span>
+      <Link to="/">
+        <h1 className="title">{author}</h1>
+      </Link>
+      <h2 className="title">{description}</h2>
+      <p>
+        Last update:{" "}
+        {formatDistance(lastUpdate, new Date(), {
+          locale: fr,
+          addSuffix: true,
+        })}
+      </p>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
