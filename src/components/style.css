@@ -1,28 +1,14 @@
-html {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0;
-}
-
 * {
-  box-sizing: border-box;
-  margin: 0;
   letter-spacing: 1px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 header {
-  background: #65afff;
+  /* background: #65afff; */
   padding: 30px;
-  color: white;
+  /* color: white; */
+  position: sticky;
+  top: 10px;
+  z-index: 1;
 }
 
 .box {
@@ -30,8 +16,27 @@ header {
   padding: 20px;
 }
 
+header .box h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+header .subtitle {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+
 header > .box {
   padding: 15px 25px;
+  box-shadow: 15px 15px #65afff;
+  margin: 20px;
 }
 
 .box > span {
@@ -41,7 +46,7 @@ header > .box {
   letter-spacing: 1px;
 }
 
-.box > h1 {
+.box h1 {
   font-weight: normal;
   font-weight: 300;
   color: white;
@@ -49,7 +54,7 @@ header > .box {
   margin-bottom: 10px;
 }
 
-.box > h1.title {
+header h1.title {
   font-size: 3em;
   margin: 0;
 }
@@ -88,7 +93,7 @@ section > h1 {
   margin-right: 60px;
 }
 
-.side-img > img {
+.side-img .project-preview {
   width: 100%;
   border: 10px solid #346dff;
   box-shadow: 15px 15px #65afff;

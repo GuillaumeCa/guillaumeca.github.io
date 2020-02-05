@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { Footer } from "./footer"
 import { Header } from "./header"
-import "./style.css"
+// import "./style.css"
 
 /**
  * Layout component that queries for data
@@ -31,16 +32,9 @@ const Layout = ({ children }) => {
         siteTitle={siteMetadata.title}
         description={siteMetadata.description}
         author={siteMetadata.author}
-        lastUpdate={siteMetadata.lastUpdate}
       />
-      <div>
-        <main className="fluid">{children}</main>
-        <footer>
-          © {new Date().getFullYear()} Guillaume Carré, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <main>{children}</main>
+      <Footer lastUpdate={siteMetadata.lastUpdate} />
     </>
   )
 }
