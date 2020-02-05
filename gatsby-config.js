@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Portfolio`,
     author: `Guillaume Carré`,
-    description: `Fullstack Web Engineer`,
+    description: `I'm a Fullstack Web Software Engineer`,
     twitterHandle: "@Irong_",
     url: `https://guillaumeca.github.io`,
     image: `/images/favicon.png`,
@@ -20,8 +20,25 @@ module.exports = {
       },
     },
     "gatsby-transformer-json",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/,
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
+    },
   ],
 }

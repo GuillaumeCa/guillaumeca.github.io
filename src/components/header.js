@@ -1,23 +1,19 @@
-import { formatDistance } from "date-fns"
-import { fr } from "date-fns/locale"
 import { Link } from "gatsby"
 import React from "react"
 
-export const Header = ({ siteTitle, author, description, lastUpdate }) => (
-  <header>
-    <div className="box">
-      <span>{siteTitle}</span>
+export const Header = ({ siteTitle, author, description }) => (
+  <header className="m-6">
+    <div className="p-4 bg-main-dark text-white border-main-light border-8 leading-none">
+      <span className="uppercase font-bold text-xl">{siteTitle}</span>
       <Link to="/">
-        <h1 className="title">{author}</h1>
+        <h1 className="text-5xl font-bold mt-1">{author}</h1>
       </Link>
-      <h2 className="title">{description}</h2>
-      <p>
-        Last update:{" "}
-        {formatDistance(lastUpdate, new Date(), {
-          locale: fr,
-          addSuffix: true,
-        })}
-      </p>
+      <h2 className="text-xl mt-2">
+        <span role="img" aria-label="waving hand">
+          👋
+        </span>{" "}
+        {description}
+      </h2>
     </div>
   </header>
 )

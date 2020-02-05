@@ -5,21 +5,25 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
+import React from "react"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, favicon } = useStaticQuery(
     graphql`
       query {
-        site {
+        site: site {
           siteMetadata {
             title
             description
             author
           }
+        }
+
+        favicon: file(relativePath: { eq: "images/favicon.png" }) {
+          publicURL
         }
       }
     `
@@ -34,6 +38,12 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[
+        {
+          rel: "icon",
+          href: favicon.publicURL,
+        },
+      ]}
       meta={[
         {
           name: `description`,
