@@ -1,6 +1,7 @@
 import Image from "gatsby-image"
 import React from "react"
 import { useSkillByTag } from "./skill"
+import { AirplaneIcon, GraduationCapIcon, IdeaIcon } from "./svgs"
 
 function SkillIcon({ tag }) {
   const skill = useSkillByTag(tag)
@@ -41,7 +42,18 @@ export function Project({
         <div className="bg-main-dark p-5 text-white">
           <h1 className="text-5xl font-light leading-none">{title}</h1>
           <h3 className="inline-block mt-2 py-1 px-3 bg-white text-main-dark font-bold text-md">
-            {subtitle}
+            <div className="flex items-center">
+              <span>
+                {type === "PERSONAL" && <IdeaIcon className="w-3 h-3 mr-1" />}
+                {type === "FREELANCE" && (
+                  <AirplaneIcon className="w-3 h-3 mr-1" />
+                )}
+                {type === "SCHOOL" && (
+                  <GraduationCapIcon className="w-3 h-3 mr-1" />
+                )}{" "}
+              </span>
+              {subtitle}
+            </div>
           </h3>
           <div
             className="mt-3"
