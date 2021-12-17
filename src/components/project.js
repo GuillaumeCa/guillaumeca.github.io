@@ -1,13 +1,12 @@
-import Image from "gatsby-image"
-import React from "react"
-import { useSkillByTag } from "./skill"
-import { AirplaneIcon, GraduationCapIcon, IdeaIcon } from "./svgs"
+import React from "react";
+import { useSkillByTag } from "./skill";
+import { AirplaneIcon, GraduationCapIcon, IdeaIcon } from "./svgs";
 
 function SkillIcon({ tag }) {
-  const skill = useSkillByTag(tag)
-  if (!skill) return null
+  const skill = useSkillByTag(tag);
+  if (!skill) return null;
 
-  const svgUrl = skill.icon.publicURL
+  const svgUrl = skill.icon;
 
   return (
     <div
@@ -15,13 +14,13 @@ function SkillIcon({ tag }) {
       className="w-12 h-12 m-2 bg-white border-4 border-white bg-contain bg-center bg-no-repeat shadow-light"
       style={{ backgroundImage: `url('${svgUrl}')` }}
     />
-  )
+  );
 }
 
 export function Project({
   type,
   anchorTag,
-  imageData,
+  image,
   title,
   subtitle,
   description,
@@ -32,9 +31,14 @@ export function Project({
   return (
     <div className="flex mt-10 flex-col md:flex-row">
       <div className="flex-1 md:w-1/2 md:mr-10">
-        <Image
+        {/* <Image
           className="border-main-light border-10 shadow-dark"
           fluid={imageData}
+          alt={"Project picture of " + title}
+        /> */}
+        <img
+          className="border-main-light border-10 shadow-dark"
+          src={image}
           alt={"Project picture of " + title}
         />
       </div>
@@ -60,7 +64,7 @@ export function Project({
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <div className="flex flex-wrap mt-2">
-            {technologies.map(t => (
+            {technologies.map((t) => (
               <SkillIcon key={t} tag={t} />
             ))}
           </div>
@@ -86,5 +90,5 @@ export function Project({
         )}
       </div>
     </div>
-  )
+  );
 }

@@ -1,4 +1,8 @@
 module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -8,7 +12,7 @@ module.exports = {
         },
       },
       borderWidth: {
-        "10": "10px",
+        10: "10px",
       },
       boxShadow: {
         light: "5px 5px 0 #65afff",
@@ -20,4 +24,4 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-}
+};
