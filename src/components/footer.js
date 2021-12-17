@@ -1,5 +1,5 @@
-import { format, formatDistance } from "date-fns"
-import React from "react"
+import { format, formatDistance } from "date-fns";
+import React from "react";
 
 export function Footer({ lastUpdate }) {
   return (
@@ -11,11 +11,8 @@ export function Footer({ lastUpdate }) {
       <span>
         Built with
         {` `}
-        <a
-          className="font-bold hover:underline"
-          href="https://www.gatsbyjs.org"
-        >
-          Gatsby
+        <a className="font-bold hover:underline" href="https://nextjs.org">
+          Nextjs
         </a>
       </span>
       {` - `}
@@ -28,5 +25,5 @@ export function Footer({ lastUpdate }) {
         </time>
       </span>
     </footer>
-  )
+  );
 }
