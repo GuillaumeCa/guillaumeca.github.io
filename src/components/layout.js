@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
         siteTitle={siteMetadata.title}
         description={siteMetadata.description}
         author={siteMetadata.author}
+        currentWork={siteMetadata.currentWork}
       />
       <main>{children}</main>
       <Footer lastUpdate={siteMetadata.lastUpdate} />

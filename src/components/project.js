@@ -9,11 +9,13 @@ function SkillIcon({ tag }) {
   const svgUrl = skill.icon;
 
   return (
-    <div
-      title={skill.name}
-      className="w-12 h-12 m-2 bg-white border-4 border-white bg-contain bg-center bg-no-repeat shadow-light"
-      style={{ backgroundImage: `url('${svgUrl}')` }}
-    />
+    <div className="bg-white mx-1 my-2 p-3 border-white shadow-md rounded-full">
+      <div
+        title={skill.name}
+        className="w-8 h-8 bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('${svgUrl}')` }}
+      />
+    </div>
   );
 }
 
@@ -31,21 +33,16 @@ export function Project({
   return (
     <div className="flex mt-10 flex-col md:flex-row">
       <div className="flex-1 md:w-1/2 md:mr-10">
-        {/* <Image
-          className="border-main-light border-10 shadow-dark"
-          fluid={imageData}
-          alt={"Project picture of " + title}
-        /> */}
         <img
-          className="border-main-light border-10 shadow-dark"
+          className="rounded-md shadow-2xl"
           src={image}
           alt={"Project picture of " + title}
         />
       </div>
       <div className="flex-1 mt-6 md:mt-0 md:w-1/2">
-        <div className="bg-main-dark p-5 text-white">
+        <div className="bg-gradient-to-b from-blue-500 to-blue-700 shadow-md shadow-blue-200 rounded-md p-5 text-white">
           <h1 className="text-5xl font-light leading-none">{title}</h1>
-          <h3 className="inline-block mt-2 py-1 px-3 bg-white text-main-dark font-bold text-md">
+          <h3 className="inline-block shadow-md mt-4 py-1 px-3 rounded-full bg-white text-main-dark font-bold text-sm">
             <div className="flex items-center">
               <span>
                 {type === "PERSONAL" && <IdeaIcon className="w-3 h-3 mr-1" />}
@@ -76,7 +73,7 @@ export function Project({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex p-2 border-4 border-black leading-none items-center text-black hover:text-white hover:bg-black">
+            <div className="flex p-2 border-4 rounded-md border-black leading-none items-center text-black hover:text-white hover:bg-black">
               <svg
                 className="w-5 h-5 fill-current"
                 xmlns="http://www.w3.org/2000/svg"

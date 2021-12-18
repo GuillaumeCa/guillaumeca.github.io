@@ -1,21 +1,28 @@
-import Link from "next/link";
 import React from "react";
 
-export const Header = ({ siteTitle, author, description }) => (
-  <header className="m-6">
-    <div className="p-4 bg-main-dark text-white border-main-light border-8 leading-none">
-      <span className="uppercase font-bold text-xl">{siteTitle}</span>
-      <Link href="/">
-        <a>
-          <h1 className="text-5xl font-bold mt-1">{author}</h1>
-        </a>
-      </Link>
-      <h2 className="text-xl mt-2">
-        <span role="img" aria-label="waving hand">
-          👋
-        </span>{" "}
-        {description}
-      </h2>
-    </div>
-  </header>
-);
+export function Header({ siteTitle, author, description, currentWork }) {
+  return (
+    <header className="bg-white flex items-center justify-center h-screen relative">
+      <div className="p-4 text-gray-400 leading-none">
+        <h1 className="text-6xl font-bold leading-normal text-transparent mt-1 bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700">
+          Hello ! I'm {author} and <br />
+          this is my portfolio.
+        </h1>
+        <h2 className="text-xl mt-2">
+          <span role="img" aria-label="waving hand">
+            👋
+          </span>{" "}
+          {description} - {currentWork}
+        </h2>
+        <div className="text-center mt-12">
+          <a
+            href="#projects"
+            className="bg-blue-600 font-medium text-white rounded-full px-5 py-3"
+          >
+            My projects &rarr;
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+}
