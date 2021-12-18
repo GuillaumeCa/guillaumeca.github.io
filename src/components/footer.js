@@ -3,8 +3,8 @@ import React from "react";
 
 export function Footer({ lastUpdate }) {
   return (
-    <footer className="p-4 mt-4 text-gray-600">
-      <span className="text-main-dark font-semibold">
+    <footer className="p-8 mt-8 text-gray-400 text-center">
+      <span className="font-semibold">
         © {new Date().getFullYear()} Guillaume Carré
       </span>
       {` - `}

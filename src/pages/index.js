@@ -11,7 +11,7 @@ import { SKILLS } from "../data/skills.data";
 function ProjectsList({ projects }) {
   return (
     <section className="px-6 max-w-6xl mx-auto mt-10">
-      <SquaredTitle>PROJECTS</SquaredTitle>
+      <SquaredTitle id="projects">PROJECTS</SquaredTitle>
       {projects.map((project) => {
         return (
           <Project
@@ -33,12 +33,14 @@ function ProjectsList({ projects }) {
 
 export function SquaredTitle({ id, children }) {
   return (
-    <h1
-      id={id}
-      className="inline-block py-2 px-4 bg-main-dark text-white uppercase text-2xl font-bold tracking-wider"
-    >
-      {children}
-    </h1>
+    <div className="inline-block rounded-md bg-gradient-to-br from-blue-500 to-blue-700">
+      <h1
+        id={id}
+        className="inline-block scroll-mt-4 py-2 px-4 text-white uppercase text-2xl font-bold tracking-wider"
+      >
+        {children}
+      </h1>
+    </div>
   );
 }
 
@@ -74,7 +76,7 @@ export default ({ projects, skills }) => {
     <Layout>
       <SEO title="Home" />
       <ProjectsList projects={projects} />
-      <SkillsList skills={skills} />
+      {/* <SkillsList skills={skills} /> */}
     </Layout>
   );
 };

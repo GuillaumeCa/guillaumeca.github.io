@@ -1,5 +1,5 @@
+import Head from "next/head";
 import React from "react";
-import Helmet from "react-helmet";
 import { SITE } from "../data/site.data";
 
 const siteMetadata = SITE;
@@ -8,53 +8,21 @@ function SEO({ title, lang = "en", meta = [] }) {
   const metaDescription = siteMetadata.description;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${siteMetadata.title}`}
-      link={[
-        {
-          rel: "icon",
-          href: siteMetadata.url,
-        },
-      ]}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <Head>
+      <title>
+        {title} | {siteMetadata.title}
+      </title>
+      <link rel="icon" href={siteMetadata.image}></link>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta property="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:creator" content={siteMetadata.author} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={metaDescription} />
+    </Head>
   );
 }
 
