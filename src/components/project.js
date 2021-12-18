@@ -34,7 +34,7 @@ export function Project({
     <div className="flex mt-10 flex-col md:flex-row">
       <div className="flex-1 md:w-1/2 md:mr-10">
         <img
-          className="rounded-md shadow-2xl"
+          className="border-4 rounded-md shadow-lg shadow-blue-100 border-blue-300 bg-blue-300"
           src={image}
           alt={"Project picture of " + title}
         />
@@ -73,7 +73,7 @@ export function Project({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex p-2 border-4 rounded-md border-black leading-none items-center text-black hover:text-white hover:bg-black">
+            <div className="flex p-2 border-4 rounded-md border-black  leading-none items-center text-black hover:text-white hover:bg-black">
               <svg
                 className="w-5 h-5 fill-current"
                 xmlns="http://www.w3.org/2000/svg"

@@ -71,10 +71,10 @@ function SkillsList({ skills }) {
   );
 }
 
-export default ({ projects, skills }) => {
+export default ({ projects, skills, siteMetadata }) => {
   return (
-    <Layout>
-      <SEO title="Home" />
+    <Layout siteMetadata={siteMetadata}>
+      <SEO title="Home" siteMetadata={siteMetadata} />
       <ProjectsList projects={projects} />
       {/* <SkillsList skills={skills} /> */}
     </Layout>
@@ -82,6 +82,9 @@ export default ({ projects, skills }) => {
 };
 
 export function getStaticProps() {
+  const siteMetadata = SITE;
+  siteMetadata.lastUpdate = Date.now();
+
   return {
     props: {
       projects: PROJECTS,

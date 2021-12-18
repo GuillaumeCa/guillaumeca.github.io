@@ -1,14 +1,11 @@
 import React from "react";
-import { SITE } from "../data/site.data";
 import { Footer } from "./footer";
 import { Header } from "./header";
-
-const siteMetadata = SITE;
 
 /**
  * Layout component
  */
-const Layout = ({ children }) => {
+const Layout = ({ children, siteMetadata }) => {
   return (
     <>
       <Header
