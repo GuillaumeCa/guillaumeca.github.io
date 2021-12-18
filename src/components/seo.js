@@ -1,10 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import { SITE } from "../data/site.data";
 
-const siteMetadata = SITE;
-
-function SEO({ title, lang = "en", meta = [] }) {
+function SEO({ title, lang = "en", meta = [], siteMetadata }) {
   const metaDescription = siteMetadata.description;
 
   return (

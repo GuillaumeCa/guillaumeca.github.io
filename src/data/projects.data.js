@@ -21,7 +21,7 @@ export const PROJECTS = [
     title: "GCFA",
     subtitle: "School project in 2017",
     description:
-      "<p>GCFA is a web app used by ISEP apprentices to upload their docs. I build this web application for a project at ISEP with 4 other people.</p>",
+      "<p>GCFA is a web app used by ISEP apprentices to upload documents related to the apprenticeship. The goal of this project was to build a new version of this app. I build it with 4 other people.</p>",
     technologies: ["react", "spring", "mysql"],
     url: null,
     source: {

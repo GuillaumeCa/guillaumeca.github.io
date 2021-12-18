@@ -6,5 +6,5 @@ export const SITE = {
   twitterHandle: "@Irong_",
   url: "https://guillaumeca.github.io",
   image: "/images/favicon.png",
-  lastUpdate: Date.now(),
+  lastUpdate: null,
 };
