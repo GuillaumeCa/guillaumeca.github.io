@@ -24,7 +24,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "publish": "touch out/.nojekyll && gh-pages -t -d out ",
+    "publish": "npm run build && touch out/.nojekyll && gh-pages -t -d out ",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   }
 }
