@@ -33,7 +33,7 @@ function ProjectsList({ projects }) {
 
 export function SquaredTitle({ id, children }) {
   return (
-    <div className="inline-block rounded-md bg-gradient-to-br from-blue-500 to-blue-700">
+    <div className="inline-block rounded-md bg-gradient-to-br from-teal-300 to-blue-700">
       <h1
         id={id}
         className="inline-block scroll-mt-4 py-2 px-4 text-white uppercase text-2xl font-bold tracking-wider"
