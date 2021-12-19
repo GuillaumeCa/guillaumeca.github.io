@@ -40,7 +40,7 @@ export function Project({
         />
       </div>
       <div className="flex-1 mt-6 md:mt-0 md:w-1/2">
-        <div className="bg-gradient-to-b from-blue-500 to-blue-700 shadow-md shadow-blue-200 rounded-md p-5 text-white">
+        <div className="bg-gradient-to-tl from-teal-300 to-blue-700 shadow-md shadow-blue-200 rounded-md p-5 text-white">
           <h1 className="text-5xl font-light leading-none">{title}</h1>
           <h3 className="inline-block shadow-md mt-4 py-1 px-3 rounded-full bg-white text-main-dark font-bold text-sm">
             <div className="flex items-center">
