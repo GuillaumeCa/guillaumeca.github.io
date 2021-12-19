@@ -3,8 +3,8 @@ import React from "react";
 export function Header({ siteTitle, author, description, currentWork }) {
   return (
     <header className="flex items-center justify-center h-screen relative">
-      <div className="p-4 text-gray-400 leading-none">
-        <h1 className="text-6xl font-bold leading-normal text-transparent mt-1 bg-clip-text bg-gradient-to-l from-teal-300 to-blue-700">
+      <div className="p-8 lg:p-4 text-gray-400 leading-none">
+        <h1 className="text-3xl lg:text-6xl lg:leading-tight font-bold text-transparent mt-1 bg-clip-text bg-gradient-to-l from-teal-300 to-blue-700">
           Hello ! I'm {author} and <br />
           this is my portfolio.
         </h1>
