@@ -31,6 +31,18 @@ export const PROJECTS = [
   },
   {
     type: "FREELANCE",
+    slug: "espace-consultant-juniorisep",
+    image: "/images/espace-consultant-juniorisep.png",
+    title: "Espace Consultants",
+    subtitle: "Junior ISEP project in 2017",
+    description:
+      "<p>I built the frontend of the web application used by consultants of JuniorIsep using Angular 2. This website is used for Project Managers to publish projects that consultants can apply to. It is also used to manage courses for consultants and a way for PM to search for consultants based on their skills</p>",
+    technologies: ["angular2", "sass"],
+    url: null,
+    source: null,
+  },
+  {
+    type: "FREELANCE",
     slug: "pickandguess",
     image: "/images/pickandguess.jpg",
     title: "Pick&Guess",
