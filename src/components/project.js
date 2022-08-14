@@ -2,14 +2,18 @@ import React from "react";
 import { useSkillByTag } from "./skill";
 import { AirplaneIcon, GraduationCapIcon, IdeaIcon } from "./svgs";
 
-function SkillIcon({ tag }) {
+export function SkillIcon({ tag, focus = false }) {
   const skill = useSkillByTag(tag);
   if (!skill) return null;
 
   const svgUrl = skill.icon;
 
   return (
-    <div className="bg-white mx-1 my-2 p-3 border-white shadow-md rounded-full">
+    <div
+      className={`bg-white mx-1 my-2 p-3 border-white shadow-md rounded-full border-2 ${
+        focus ? "border-blue-600" : " border-transparent"
+      }`}
+    >
       <div
         title={skill.name}
         className="w-8 h-8 bg-contain bg-center bg-no-repeat"
@@ -31,7 +35,7 @@ export function Project({
   source,
 }) {
   return (
-    <div className="flex mt-10 flex-col md:flex-row">
+    <div className="flex mb-10 flex-col md:flex-row">
       <div className="flex-1 md:w-1/2 md:mr-10">
         <img
           className="border-4 rounded-md shadow-lg shadow-blue-100 border-blue-300 bg-blue-300"
