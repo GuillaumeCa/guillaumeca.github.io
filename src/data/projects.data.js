@@ -83,7 +83,7 @@ export const PROJECTS = [
     },
     description: {
       en: "<p>Pick&Guess is an iOS application on which you can find hotels by guessing the room's prices.</p><p>It is also an app that you can use to promote your hotel if you are a manager.</p>",
-      fr: "<p>Pick&Guess est une application iOS sur laquelle on cherche un hôtel en devinant le prix de la chambre</p><p>L'application intégre également un module de gestion pour les managers de l'hôtel.</p>",
+      fr: "<p>Pick&Guess est une application iOS sur laquelle on cherche un hôtel en devinant le prix de la chambre.</p><p>L'application intégre également un module de gestion pour les managers de l'hôtel.</p>",
     },
     technologies: ["swift", "react", "nodejs", "mysql"],
     url: null,
@@ -117,7 +117,7 @@ export const PROJECTS = [
     },
     description: {
       en: '<p>I implemented the game Dots and Boxes using the <span class="accent">Java</span> language and the StdDraw library. You can play against another player or against an AI with 3 levels of difficulty. The game has a console and a graphical UI.</p>',
-      fr: "<p>J'ai implémenté le jeu Dots and Boxes en utilisant le language Java ainsi que la bibliothèque StdDraw. On peut jouer contre un autre joueur ou contre une IA avec 3 niveaux de difficulté. Le jeu possède aussi un mode onsole et une interface graphique.</p>",
+      fr: "<p>J'ai implémenté le jeu Dots and Boxes en utilisant le language Java ainsi que la bibliothèque StdDraw. On peut jouer contre un autre joueur ou contre une IA avec 3 niveaux de difficulté. Le jeu possède aussi un mode console et une interface graphique.</p>",
     },
     technologies: ["java"],
     url: null,

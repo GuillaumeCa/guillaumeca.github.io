@@ -27,7 +27,7 @@ export function Header({ siteTitle, author, description, currentWork }) {
           </a>
         </div>
       </div>
-      <div className="absolute bottom-0 mb-5 text-blue-400 text-lg text-center space-x-2">
+      <div className="absolute bottom-0 mb-5 text-gray-400 text-lg text-center space-x-2">
         <LanguageSwitcher currentLang={currentLang} locale="fr">
           FR
         </LanguageSwitcher>
