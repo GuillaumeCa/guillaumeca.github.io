@@ -3,7 +3,7 @@ export const SITE = {
   author: "Guillaume Carré",
   description: {
     en: "I'm a Fullstack Web Software Engineer",
-    fr: "Je suis ingénieur Web Fullstack",
+    fr: "Je suis un Ingénieur Web Fullstack",
   },
   currentWork: {
     en: "I've been working at Thales for the last 5 years.",

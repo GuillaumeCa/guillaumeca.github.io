@@ -1,0 +1,15 @@
+{
+  "home": "Accueil",
+  "header": {
+    "title": {
+      "l1": "Bonjour, je m'appelle {{name}}",
+      "l2": "et ceci est mon portfolio"
+    },
+    "myprojects": "Mes projets"
+  },
+  "projects": "Projets",
+  "footer": {
+    "built-with": "Conçu avec",
+    "updated": "Mis à jour"
+  }
+}
