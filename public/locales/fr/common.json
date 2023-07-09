@@ -5,7 +5,12 @@
       "l1": "Bonjour, je m'appelle {{name}}",
       "l2": "et ceci est mon portfolio"
     },
-    "myprojects": "Mes projets"
+    "myprojects": "Mes projets",
+    "nightmode": {
+      "night": "Activer mode nuit",
+      "light": "Activer mode jour",
+      "system": "Utiliser le mode d'apparence du système"
+    }
   },
   "projects": "Projets",
   "footer": {

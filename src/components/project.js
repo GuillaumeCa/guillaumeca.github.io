@@ -38,13 +38,13 @@ export function Project({
     <div className="flex mb-10 flex-col md:flex-row">
       <div className="flex-1 md:w-1/2 md:mr-10">
         <img
-          className="border-4 rounded-md shadow-lg shadow-blue-100 border-blue-300 bg-blue-300"
+          className="border-4 rounded-md shadow-lg shadow-blue-100 dark:shadow-blue-500/40 border-blue-300 bg-blue-300"
           src={image}
           alt={"Project picture of " + title}
         />
       </div>
       <div className="flex-1 mt-6 md:mt-0 md:w-1/2">
-        <div className="bg-gradient-to-tl from-teal-300 to-blue-700 shadow-md shadow-blue-200 rounded-md p-5 text-white">
+        <div className="bg-gradient-to-tl from-teal-300 to-blue-700 shadow-md shadow-blue-200 dark:shadow-teal-600/50 rounded-md p-5 text-white">
           <h1 className="text-5xl font-light leading-none">{title}</h1>
           <h3 className="inline-block shadow-md mt-4 py-1 px-3 rounded-full bg-white text-main-dark font-bold text-sm">
             <div className="flex items-center">
@@ -77,7 +77,7 @@ export function Project({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex p-2 border-4 rounded-md border-black  leading-none items-center text-black hover:text-white hover:bg-black">
+            <div className="flex p-2 border-4 rounded-md border-black dark:border-white leading-none items-center text-black dark:text-white hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-black">
               <svg
                 className="w-5 h-5 fill-current"
                 xmlns="http://www.w3.org/2000/svg"

@@ -7,7 +7,7 @@ import { Header } from "./header";
  */
 const Layout = ({ children, siteMetadata, locale }) => {
   return (
-    <>
+    <div className="bg-white dark:bg-black">
       <Header
         siteTitle={siteMetadata.title}
         description={siteMetadata.description[locale]}
@@ -16,7 +16,7 @@ const Layout = ({ children, siteMetadata, locale }) => {
       />
       <main>{children}</main>
       <Footer lastUpdate={siteMetadata.lastUpdate} />
-    </>
+    </div>
   );
 };
 
