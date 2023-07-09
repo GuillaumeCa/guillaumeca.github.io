@@ -77,7 +77,7 @@ export function Project({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex p-2 border-4 rounded-md border-black dark:border-white leading-none items-center text-black dark:text-white hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-black">
+            <div className="flex p-2 border-4 rounded-md border-black dark:border-white leading-none items-center text-black dark:text-white hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white">
               <svg
                 className="w-5 h-5 fill-current"
                 xmlns="http://www.w3.org/2000/svg"

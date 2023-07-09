@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
+import { useMediaQuery } from "./useMediaQuery";
 
-function toggleDarkmode() {
-  if (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
+function toggleDarkmode(dark) {
+  if (dark) {
     document.documentElement.classList.add("dark");
   } else {
     document.documentElement.classList.remove("dark");
@@ -14,6 +11,8 @@ function toggleDarkmode() {
 
 export function useDarkmode() {
   const [darkMode, setDarkMode] = useState("auto");
+  const isSystemDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+
   useEffect(() => {
     if ("theme" in localStorage) {
       if (localStorage.theme === "dark") {
@@ -22,9 +21,13 @@ export function useDarkmode() {
         setDarkMode("light");
       }
     }
-
-    toggleDarkmode();
   }, []);
+
+  useEffect(() => {
+    toggleDarkmode(
+      (darkMode === "auto" && isSystemDarkMode) || darkMode === "dark"
+    );
+  }, [isSystemDarkMode, darkMode]);
 
   return {
     mode: darkMode,
@@ -36,8 +39,6 @@ export function useDarkmode() {
       } else {
         localStorage.removeItem("theme");
       }
-
-      toggleDarkmode();
     },
   };
 }
