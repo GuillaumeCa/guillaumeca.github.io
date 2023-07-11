@@ -59,20 +59,24 @@ function ProjectsList({ projects, locale, skills }) {
     <section className="px-6 max-w-6xl mx-auto mt-10 min-h-screen">
       <div className="flex justify-between mb-10">
         <SquaredTitle id="projects">{t("projects")}</SquaredTitle>
-        <button
-          type="button"
-          onClick={() => {
-            if (showFilters) {
-              setSkillFocus(null);
-            }
-            setShowFilters(!showFilters);
-          }}
-          className={`p-3 ${
-            showFilters ? "bg-blue-200" : "bg-blue-50"
-          } rounded-full hover:bg-blue-100 active:bg-blue-200`}
-        >
-          <FilterIcon className="text-blue-500" />
-        </button>
+
+        <div className="flex items-center group">
+          <p className="text-gray-400 hidden group-hover:block m-3">Filtrer</p>
+          <button
+            type="button"
+            onClick={() => {
+              if (showFilters) {
+                setSkillFocus(null);
+              }
+              setShowFilters(!showFilters);
+            }}
+            className={`p-3 ${
+              showFilters ? "bg-blue-200" : "bg-blue-50"
+            } rounded-full group-hover:bg-blue-100 active:bg-blue-200`}
+          >
+            <FilterIcon className="text-blue-500" />
+          </button>
+        </div>
       </div>
       {showFilters && (
         <SkillFilter

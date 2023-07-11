@@ -6,8 +6,8 @@ export const SITE = {
     fr: "Je suis un Ingénieur Web Fullstack",
   },
   currentWork: {
-    en: "I've been working at Thales for the last 5 years.",
-    fr: "Je travaille à Thales depuis 5 ans.",
+    en: "and i'm currently working at Thales.",
+    fr: "et je travaille à Thales.",
   },
   twitterHandle: "@Irong_",
   url: "https://guillaumeca.github.io",

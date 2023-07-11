@@ -10,10 +10,13 @@ export function SkillIcon({ tag, focus = false }) {
 
   return (
     <div
-      className={`bg-white mx-1 my-2 p-3 border-white shadow-md rounded-full border-2 ${
+      className={`group relative bg-white mx-1 my-2 p-3 border-white shadow-md rounded-full border-2 ${
         focus ? "border-blue-600" : " border-transparent"
       }`}
     >
+      <div className="opacity-0 z-10 transition-opacity whitespace-nowrap text-sm absolute px-2 py-1 left-1/2 -translate-x-1/2 -translate-y-1/2 ring-1 ring-gray-500 top-1/2 bg-black/40 backdrop-blur-sm rounded-full text-white/80 group-hover:opacity-100">
+        {skill.name}
+      </div>
       <div
         title={skill.name}
         className="w-8 h-8 bg-contain bg-center bg-no-repeat"

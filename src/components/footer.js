@@ -7,7 +7,11 @@ import LanguageSwitchLink from "./LanguageSwitchLink";
 export function LanguageSwitcher({ currentLang, locale, children }) {
   return (
     <LanguageSwitchLink
-      className={`${currentLang === locale ? "font-bold" : ""}`}
+      className={`${
+        currentLang === locale
+          ? "text-gray-400"
+          : "text-gray-400/50 hover:text-gray-400/70"
+      }`}
       locale={locale}
     >
       {children}
@@ -25,7 +29,7 @@ export function Footer({ lastUpdate }) {
   const currentLang = i18n.language;
 
   return (
-    <div className="mt-8">
+    <div className="mt-28">
       <div className="mb-3 text-gray-400 text-lg text-center space-x-2">
         <LanguageSwitcher currentLang={currentLang} locale="fr">
           FR

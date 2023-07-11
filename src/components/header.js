@@ -74,28 +74,31 @@ export function Header({ siteTitle, author, description, currentWork }) {
           </svg>
         </button>
       </div>
-      <div className="p-8 lg:p-4 text-gray-400 leading-none">
-        <h1 className="text-3xl lg:text-6xl lg:leading-tight font-bold text-transparent mt-1 bg-clip-text bg-gradient-to-l from-teal-300 to-blue-700">
-          {t("header.title.l1", { name: author })} <br />
-          {t("header.title.l2")}
+      <div className="p-8 lg:p-4 text-center text-gray-400 leading-none">
+        <img
+          className="rounded-full pointer-events-none inline-block w-20 lg:w-28 shadow-lg ring-1 ring-gray-500/20"
+          src="https://avatars.githubusercontent.com/u/14944450?v=4"
+        />
+        <h1 className="text-3xl mb-4 lg:text-6xl text-center lg:leading-tight font-bold text-transparent mt-1 bg-clip-text bg-gradient-to-l from-teal-300 to-blue-700">
+          {author}
         </h1>
         <h2 className="text-xl mt-2">
           <span role="img" aria-label="waving hand">
             👋
           </span>{" "}
-          {description} - {currentWork}
+          {description} {currentWork}
         </h2>
         <div className="text-center mt-12">
           <a
             href="#projects"
-            className="bg-gradient-to-br from-teal-300 to-blue-700 font-m text-gray-300edium text-white rounded-full px-5 py-3 shadow-lg shadow-blue-200 dark:shadow-blue-900/30"
+            className="bg-gradient-to-br from-teal-300 to-blue-700 font-m text-gray-300edium text-white rounded-full px-5 py-3 shadow-lg shadow-blue-200 dark:shadow-blue-700/50"
           >
-            {t("header.myprojects")} &rarr;
+            {t("header.myprojects")} &darr;
           </a>
         </div>
       </div>
 
-      <div className="absolute bottom-0 mb-5 text-gray-400 text-lg text-center space-x-2">
+      <div className="absolute left-0 top-0 p-5 text-gray-400 text-md text-center space-x-2">
         <LanguageSwitcher currentLang={currentLang} locale="fr">
           FR
         </LanguageSwitcher>

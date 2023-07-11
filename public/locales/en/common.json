@@ -1,10 +1,6 @@
 {
   "home": "Home",
   "header": {
-    "title": {
-      "l1": "Hello, i'm {{name}} and",
-      "l2": "this is my portfolio"
-    },
     "myprojects": "My projects",
     "nightmode": {
       "night": "Enable night mode",
