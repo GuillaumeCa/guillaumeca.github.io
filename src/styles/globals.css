@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth bg-white;
+}
+
+html.dark {
+  @apply bg-black;
 }
