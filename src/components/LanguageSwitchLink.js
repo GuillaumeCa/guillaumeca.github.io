@@ -19,7 +19,7 @@ const LanguageSwitchLink = ({ locale, className, children, ...rest }) => {
   }
 
   return (
-    <Link href={href}>
+    <Link href={href} scroll={false}>
       <button
         className={className}
         onClick={() => languageDetector.cache(locale)}
