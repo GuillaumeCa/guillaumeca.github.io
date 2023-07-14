@@ -56,7 +56,7 @@ function ProjectsList({ projects, locale, skills }) {
   );
 
   return (
-    <section className="px-6 max-w-6xl mx-auto mt-10 min-h-screen">
+    <section className="px-4 md:px-6 max-w-6xl mx-auto mt-10 min-h-screen">
       <div className="flex justify-between mb-10">
         <SquaredTitle id="projects">{t("projects")}</SquaredTitle>
 

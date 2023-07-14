@@ -8,7 +8,7 @@ export function Header({ siteTitle, author, description, currentWork }) {
   const darkMode = useDarkmode();
   const currentLang = i18n.language;
   return (
-    <header className="flex items-center justify-center h-screen relative">
+    <header className="flex items-center justify-center h-screen relative border-t border-gray-500/30">
       <div className="absolute top-0 right-0 p-5 flex justify-center">
         <button
           disabled={darkMode.mode === "light"}

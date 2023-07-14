@@ -38,7 +38,7 @@ export function Project({
   source,
 }) {
   return (
-    <div className="flex mb-10 flex-col md:flex-row">
+    <div className="flex mb-20 flex-col md:flex-row">
       <div className="flex-1 md:w-1/2 md:mr-10">
         <img
           className="border-4 rounded-md shadow-lg shadow-blue-100 dark:shadow-blue-500/40 border-blue-300 bg-blue-300"
@@ -46,7 +46,7 @@ export function Project({
           alt={"Project picture of " + title}
         />
       </div>
-      <div className="flex-1 mt-6 md:mt-0 md:w-1/2">
+      <div className="flex-1 mt-3 md:mt-0 md:w-1/2">
         <div className="bg-gradient-to-tl from-teal-300 to-blue-700 shadow-md shadow-blue-200 dark:shadow-teal-600/50 rounded-md p-5 text-white">
           <h1 className="text-5xl font-light leading-none">{title}</h1>
           <h3 className="inline-block shadow-md mt-4 py-1 px-3 rounded-full bg-white text-main-dark font-bold text-sm">

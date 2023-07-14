@@ -11,7 +11,7 @@ export function LanguageSwitcher({ currentLang, locale, children }) {
         currentLang === locale
           ? "text-gray-400"
           : "text-gray-400/50 hover:text-gray-400/70"
-      }`}
+      } text-xl md:text-base`}
       locale={locale}
     >
       {children}
